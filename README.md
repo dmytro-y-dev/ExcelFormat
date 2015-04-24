@@ -1,28 +1,28 @@
 ExcelFormat
 ===========
 
-*Author: Martin Fuchs*  
+*Original author: Martin Fuchs*  
 *Integration with CMake: metamaker*
 
 ExcelFormat allows reading, writing, and editing of XLS (BIFF8 format) files using C++. For more details see <http://www.codeproject.com/Articles/42504/ExcelFormat-Library>.
 
-Building the utility
---------------------
+How to build
+------------
 
 You should use bii (<http://www.biicode.com>) to build this project. Building commands are next:
 
-1. `$ cd` to project's folder.
+1. `$ cd` to the project's folder.
 2. Run `$ bii init -L`.
 3. Run `$ bii find`.
 4. Run `$ bii cpp:configure`. You can specify your CMake generator with `-G` flag like `$ bii cpp:configure -G "Visual Studio 12"`.
-5. Run `$ bii cpp:build` to build application.
+5. Run `$ bii cpp:build` to build the project.
 
 Another possible option is CMake (<http://www.cmake.org/>). The steps are next:
 
-1. Open command line and change current directory with `$ cd` command to the directory where you unpacked the utility's source code.
-2. Run `$ cmake -H. -Bbuild -G "Visual Studio 12"` to create Makefile for Visual Studio 2013 (or use other generator if you use other IDE). Don't forget to specify path to dependencies libraries and headers with -D parameter.
-3. Open `$ build/ExcelFormat.sln` and build solution in Visual Studio.
-4. Optionally, you can install library by building project "INSTALL" in Visual Studio. Remember that you must have enough rights on your system to let VS copy files to installation folder.
+1. Open command line and change current directory with `$ cd` command to the directory where you unpacked the project's source code.
+2. Run `$ cmake -H. -Bbuild -G "Visual Studio 12"` to create Makefile for Visual Studio 2013 (or use other generator if you use other IDE). Don't forget to specify path to dependency libraries and headers with -D parameter.
+3. Open `build/ExcelFormat.sln` and build solution in Visual Studio.
+4. Optionally, you can install library by building project which name is `INSTALL` in Visual Studio. Remember that you must have enough rights on your system to let VS copy files to installation folder.
 
 License agreement
 -----------------
