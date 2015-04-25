@@ -4,7 +4,11 @@ ExcelFormat
 *Original author: Martin Fuchs*  
 *Integration with CMake and bii: metamaker*
 
-ExcelFormat allows reading, writing, and editing of XLS (BIFF8 format) files using C++. For more details see <http://www.codeproject.com/Articles/42504/ExcelFormat-Library>. For example application which uses ExcelFormat see <https://github.com/metamaker/ExcelFormat-BiiExample>. 
+ExcelFormat allows reading, writing, and editing of XLS (BIFF8 format) files using C++. For more details see <http://www.codeproject.com/Articles/42504/ExcelFormat-Library>.
+
+For example application which uses ExcelFormat see <https://github.com/metamaker/ExcelFormat-BiiExample>. 
+
+[![Build Status](https://webapi.biicode.com/v1/badges/metamaker/metamaker/ExcelFormat/master)](https://www.biicode.com/metamaker/ExcelFormat)
 
 How to build
 ------------
