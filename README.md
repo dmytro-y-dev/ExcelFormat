@@ -9,13 +9,22 @@ ExcelFormat allows reading, writing, and editing of XLS (BIFF8 format) files usi
 How to build
 ------------
 
-You should use bii (<http://www.biicode.com>) to build this project. Building commands are next:
+You can use this library with `bii` (<http://www.biicode.com>). To do this follow next steps:
 
-1. `$ cd` to the project's folder.
-2. Run `$ bii init -L`.
-3. Run `$ bii find`.
-4. Run `$ bii cpp:configure`. You can specify your CMake generator with `-G` flag like `$ bii cpp:configure -G "Visual Studio 12"`.
-5. Run `$ bii cpp:build` to build the project.
+1. In some source file of your project include `ExcelFormat` by adding `#include <ExcelFormat/ExcelFormat.h>`.
+2. Initialize bii block inside your project's folder (if not yet then run `$ bii init -L`).
+3. Run `$ bii find` to download dependencies and create `biicode.conf` file in the root of your project.
+4. Add `metamaker/ExcelFormat: 0` line to `[requirements]` section in `biicode.conf`.
+5. Add `ExcelFormat/*: metamaker/ExcelFormat/include` line to `[includes]` section in `biicode.conf`.
+6. Result of steps 4 and 5 must be something like next:
+
+    [requirements]
+	    metamaker/ExcelFormat: 0
+
+    [includes]
+        ExcelFormat/*: metamaker/ExcelFormat/include
+7. Run `$ bii cpp:configure`. You can specify your CMake generator with `-G` flag like `$ bii cpp:configure -G "Visual Studio 12"`.
+8. Run `$ bii cpp:build` to build your project.
 
 Another possible option is CMake (<http://www.cmake.org/>). The steps are next:
 
