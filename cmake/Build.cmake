@@ -2,7 +2,7 @@
 #  Source code compilation instructions
 #-----------------------------------------------
 
-include_directories(include)
+include_directories(include/ExcelFormat)
 
 FILE(GLOB PROJECT_SOURCE_FILES source/*.cpp)
 
