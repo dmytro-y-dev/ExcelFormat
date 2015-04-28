@@ -44,6 +44,11 @@ This source code and files are licensed under The Code Project Open License (CPO
 Release history
 ---------------
 
+28.04.2015 - Version 3.1
+
+- FindExcelFormat.cmake is fixed to correspond new dirs structure
+- Prebuilt version of library for usage in CMake projects with VS2013
+
 24.04.2015
 - Integration with CMake buildsystem
 
