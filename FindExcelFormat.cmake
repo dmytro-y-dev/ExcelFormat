@@ -41,7 +41,7 @@ set(EXCELFORMAT_NAMES ExcelFormat)
 
 # Try each search configuration.
 foreach(search ${_EXCELFORMAT_SEARCHES})
-  find_path(EXCELFORMAT_INCLUDE_DIR NAMES ExcelFormat.h        ${${search}} PATH_SUFFIXES include)
+  find_path(EXCELFORMAT_INCLUDE_DIR NAMES ExcelFormat/ExcelFormat.h ${${search}} PATH_SUFFIXES include)
   find_library(EXCELFORMAT_LIBRARY  NAMES ${EXCELFORMAT_NAMES} ${${search}} PATH_SUFFIXES lib)
 endforeach()
 
@@ -49,7 +49,7 @@ mark_as_advanced(EXCELFORMAT_LIBRARY EXCELFORMAT_INCLUDE_DIR)
 
 # handle the QUIETLY and REQUIRED arguments and set EXCELFORMAT_FOUND to TRUE if
 # all listed variables are TRUE
-include(${CMAKE_CURRENT_LIST_DIR}/FindPackageHandleStandardArgs.cmake)
+include(FindPackageHandleStandardArgs)
 FIND_PACKAGE_HANDLE_STANDARD_ARGS(ExcelFormat REQUIRED_VARS EXCELFORMAT_LIBRARY EXCELFORMAT_INCLUDE_DIR
                                        VERSION_VAR EXCELFORMAT_VERSION_STRING)
 
