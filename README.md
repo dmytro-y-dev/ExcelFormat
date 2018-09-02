@@ -8,7 +8,7 @@ ExcelFormat allows reading, writing, and editing of XLS (BIFF8 format) files usi
 
 For example application which uses ExcelFormat see <https://github.com/metamaker/ExcelFormat-BiiExample>. 
 
-[![Build Status](https://webapi.biicode.com/v1/badges/metamaker/metamaker/ExcelFormat/master)](https://www.biicode.com/metamaker/ExcelFormat)
+[![Build Status](https://travis-ci.org/metamaker/ExcelFormat.svg?branch=master)](https://travis-ci.org/metamaker/ExcelFormat)
 
 How to build
 ------------
